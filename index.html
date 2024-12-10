@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Press a key</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: white;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>press a key</div>
+
+    <script>
+        const sites = {
+            'a': 'https://www.amazon.com',
+            'b': 'https://www.bing.com',
+            'c': 'https://www.cnn.com',
+            'd': 'https://www.discord.com',
+            'e': 'https://www.ebay.com',
+            'f': 'https://www.facebook.com',
+            'g': 'https://www.google.com',
+            'h': 'https://www.github.com',
+            'i': 'https://www.instagram.com',
+            'j': 'https://www.java.com',
+            'k': 'https://www.kaggle.com',
+            'l': 'https://www.linkedin.com',
+            'm': 'https://www.microsoft.com',
+            'n': 'https://www.netflix.com',
+            'o': 'https://www.oracle.com',
+            'p': 'https://www.pinterest.com',
+            'q': 'https://www.quora.com',
+            'r': 'https://www.reddit.com',
+            's': 'https://www.spotify.com',
+            't': 'https://www.twitter.com',
+            'u': 'https://www.uber.com',
+            'v': 'https://www.vimeo.com',
+            'w': 'https://www.wikipedia.org',
+            'x': 'https://www.xbox.com',
+            'y': 'https://www.youtube.com',
+            'z': 'https://www.zoom.us'
+        };
+
+        document.addEventListener('keydown', (event) => {
+            const key = event.key.toLowerCase();
+            if (sites[key]) {
+                window.location.href = sites[key];
+            }
+        });
+    </script>
+</body>
+</html>
